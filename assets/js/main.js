@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 produtosGrid.innerHTML = '';
                 produtosFiltrados.forEach((produto, idx) => {
                     produtosGrid.innerHTML += `
-                    <div class="produto-card" data-categoria="${produto.categoria}" data-idx="${idx}">
+                    <div class="produto-card" data-categoria="${produto.categoria}" data-id="${produto.id}">
                         <div class="produto-img produto-link" style="cursor:pointer;">
                             <img src="${produto.imagem}" alt="${produto.nome}">
                             ${produto.desconto ? `<span class="discount-badge">-${produto.desconto}%</span>` : ''}
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
 
                 // Adicionar eventos aos produtos renderizados
-                adicionarEventosProdutos(produtos);
+                adicionarEventosProdutos(produtosFiltrados);
             }
 
             // Função para adicionar eventos aos produtos
@@ -40,9 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.querySelectorAll('.produto-link').forEach(function(el) {
                     el.addEventListener('click', function(e) {
                         const card = el.closest('.produto-card');
-                        const idx = card.getAttribute('data-idx');
-                        const produto = produtos[idx];
-                        localStorage.setItem('produtoSelecionado', JSON.stringify(produto));
+                        const id = card.getAttribute('data-id');
+                        // Busque o produto pelo id no array de todos os produtos
+                        const produtoSelecionado = produtos.find(p => p.id == id);
+                        localStorage.setItem('produtoSelecionado', JSON.stringify(produtoSelecionado));
                         window.location.href = 'venda.html';
                     });
                 });
