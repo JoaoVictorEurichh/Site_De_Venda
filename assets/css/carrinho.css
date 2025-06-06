@@ -23,7 +23,7 @@ span {
 
 a {
     text-decoration: none !important;;
-    color: #fff !important;
+    color: #fff;
     transition: all 0.3s ease;
 }
 
@@ -143,11 +143,81 @@ a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff6600;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .voltar-compras:hover {
     background-color: #d85b08;
+}
+
+/* Modal de Finalização */
+
+.modal-finalizar {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-finalizar.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #222;
+  color: #ff6600;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 1.5rem;
+  color: #ff6600;
+  cursor: pointer;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 0.7rem;
+  background: #333;
+  color: #fff;
+}
+
+.btn-finalizar {
+  width: 100%;
+  background: #ff6600;
+  color: #3a3a3a;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-finalizar:hover {
+  background: #e65c00;
 } 

@@ -53,7 +53,7 @@ img {
 .main-nav a {
     font-size: 14px;
     font-weight: 600;
-    color: #fff;
+    color: #fff !important;
     padding: 5px 0;
     position: relative;
 }
@@ -329,7 +329,7 @@ img {
     background-color: #333;
     border-radius: 50%;
     transition: all 0.3s ease;
-    color: #e65c00;
+    color: #e65c00 ;
 }
 .social-icons a:hover {
     background-color: #ff6600;
@@ -404,5 +404,39 @@ img {
 @media (max-width: 576px) {
     .filter-tabs {
         flex-wrap: wrap;
+    }
+}
+@media (max-width: 940px) {
+    .container {
+        max-width: 100%;
+        padding: 0 8px;
+    }
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .filter-tabs {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+    .banner {
+        height: 180px;
+        margin-top: 90px;
+    }
+}
+@media (max-width: 700px) {
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+    .filter-tabs {
+        flex-wrap: wrap;
+
+        gap: 6px;
+    }
+
+    .banner {
+        height: 140px;
+        margin-top: 70px;
     }
 }

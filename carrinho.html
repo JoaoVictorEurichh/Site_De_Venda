@@ -16,7 +16,7 @@
         <div class="container">
             <div class="logo-container">
                 <a href="index.html" class="logo">
-                    <img src="assets/image/TaticaAlphalogo-removebg-preview.png" alt="Tática Alpha">
+                    <img src="assets/image/TaticaAlphalogo-sem fundo.png" alt="Tática Alpha">
                 </a>
             </div>
             <nav class="main-nav">
@@ -36,14 +36,15 @@
     <main>
         <h2>Seu Carrinho</h2>
         <div id="carrinho-lista" class="carrinho-lista">
-            <!-- Os itens do carrinho serão inseridos aqui via JavaScript -->
+            <!-- Os itens do carrinho serão inseridos aqui -->
         </div>
         <div id="carrinho-total" class="carrinho-total">
-            <!-- O total será calculado via JavaScript -->
+            <!-- O total será calculado -->
         </div>
         <button id="finalizar-compra" class="finalizar-compra">Finalizar Compra</button>
     </main>
 
+    <!--Footer-->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-top">
@@ -87,6 +88,34 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal de Finalização de Compra -->
+    <div id="modal-finalizar" class="modal-finalizar">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <h3>Finalizar Compra</h3>
+        <form id="form-finalizar">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" required maxlength="9" placeholder="00000-000">
+
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required placeholder="Rua, número, bairro, cidade">
+
+          <label for="pagamento">Forma de Pagamento:</label>
+          <select id="pagamento" name="pagamento" required>
+            <option value="">Selecione</option>
+            <option value="pix">Pix</option>
+            <option value="debito">Cartão de Débito</option>
+            <option value="credito">Cartão de Crédito</option>
+            <option value="boleto">Boleto</option>
+          </select>
+
+          <div id="pagamento-info"></div>
+
+          <button type="submit" class="btn-finalizar">Confirmar Pedido</button>
+        </form>
+      </div>
+    </div>
 
     <script src="assets/js/carrinho.js"></script>
 </body>
