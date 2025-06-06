@@ -36,12 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Função para adicionar eventos aos produtos
             function adicionarEventosProdutos(produtos) {
-                // Evento para abrir tela de venda ao clicar na imagem ou nome
+                // abrir tela de venda ao clicar
                 document.querySelectorAll('.produto-link').forEach(function(el) {
                     el.addEventListener('click', function(e) {
                         const card = el.closest('.produto-card');
                         const id = card.getAttribute('data-id');
-                        // Busque o produto pelo id no array de todos os produtos
                         const produtoSelecionado = produtos.find(p => p.id == id);
                         localStorage.setItem('produtoSelecionado', JSON.stringify(produtoSelecionado));
                         window.location.href = 'venda.html';
@@ -53,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     btn.addEventListener('click', function(e) {
                         e.preventDefault();
                         const card = btn.closest('.produto-card');
-                        const idx = card.getAttribute('data-idx');
-                        const produto = produtos[idx];
+                        const id = card.getAttribute('data-id');
+                        const produto = produtos.find(p => p.id == id);
                         let carrinho = [];
                         if (localStorage.getItem('carrinho')) {
                             try {
