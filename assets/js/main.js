@@ -105,4 +105,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
+
+        // links de categoria no footer
+        document.querySelectorAll('.footer-categoria a[data-filter]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Só executa se estiver na mesma página
+                if (window.location.pathname.includes('index.html')) {
+                    e.preventDefault();
+                    const filtro = this.getAttribute('data-filter');
+                    // Scroll suave até a seção de produtos
+                    document.getElementById('produtos').scrollIntoView({ behavior: 'smooth' });
+                    // Aguarda o scroll e aplica o filtro
+                    setTimeout(() => {
+                        const btn = document.querySelector(`.filtro-btn[data-filter='${filtro}']`);
+                        if (btn) btn.click();
+                    }, 400);
+                }
+            });
+        });
 });
