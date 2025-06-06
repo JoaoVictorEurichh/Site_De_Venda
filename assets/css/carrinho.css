@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1c1c1c !important;
+    color: #f5f5f5;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #2f2f2f;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ff6600 !important;
+}
+
+span {
+    color: #fff;
+}
+
+a {
+    text-decoration: none !important;;
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+.carrinho-lista {
+    margin-top: 20px;
+}
+
+.carrinho-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.carrinho-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+.item-info h3 {
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+
+.item-preco {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.item-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.quantidade-btn {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantidade-btn:hover {
+    background-color: #ff6600;
+}
+
+.remover-item {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.remover-item:hover {
+    background-color: #d85b08;
+}
+
+.carrinho-total {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.carrinho-total h3 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.finalizar-compra {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.finalizar-compra:hover {
+    background-color: #d85b08;
+}
+
+.carrinho-vazio {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+}
+
+.carrinho-vazio p {
+    margin-bottom: 20px;
+}
+
+.voltar-compras {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.voltar-compras:hover {
+    background-color: #d85b08;
+} 

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhe do Produto - Tática Alpha</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/venda.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/image/TaticaAlphalogo-removebg-preview.png" alt="Tática Alpha">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="index.html#produtos">PRODUTOS</a></li>
+                    <li><a href="index.html#sobre">SOBRE</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="coluna-esquerda">
+                <div class="imagem-produto">
+                    <img id="produto-imagem" src="" alt="Imagem do Produto">
+                </div>
+                <div class="caracteristicas">
+                    <h3>Características</h3>
+                    <ul id="produto-caracteristicas">
+                        <!-- Será preenchido via JavaScript -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detalhes">
+                <h1 id="produto-nome"></h1>
+                <p><strong>Marca:</strong> <span id="produto-marca"></span><br>
+                   <strong>Código do produto:</strong> <span id="produto-codigo"></span></p>
+
+                <div class="preco" id="produto-preco"></div>
+                <div class="parcelamento" id="produto-parcelamento"></div>
+
+                <div class="botoes">
+                    <button class="comprar">Comprar</button>
+                    <button class="carrinho">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="descricao-especificacoes">
+                    <div class="descricao">
+                        <h3>Descrição</h3>
+                        <p id="produto-descricao"></p>
+                    </div>
+                    <div class="especificacoes">
+                        <h3>Especificações Técnicas</h3>
+                        <ul id="produto-especificacoes">
+                            <!-- Será preenchido via JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3>TÁTICA ALPHA</h3>
+                    <p>Sua fonte confiável de armas táticas e equipamentos militares de alta qualidade.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#produtos">Produtos</a></li>
+                        <li><a href="index.html#sobre">Sobre nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-categoria">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Pistolas</a></li>
+                        <li><a href="#">Rifles</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Munições</a></li>
+                    </ul>
+                </div>
+                <div class="footer-Contato">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua. Frei Caneca, 25 - Guarapuava, PR</p>
+                    <p><i class="fas fa-phone"></i> (12) 3456-7890</p>
+                    <p><i class="fas fa-envelope"></i> taticaalpha@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tática Alpha. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/venda.js"></script>
+</body>
+</html>

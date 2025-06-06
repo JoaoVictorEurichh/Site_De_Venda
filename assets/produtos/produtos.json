@@ -1,0 +1,111 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Glock G25",
+            "marca": "Glock",
+            "codigo": "GLK25",
+            "preco": 5040.00,
+            "parcelamento": "12x de R$ 540,00",
+            "imagem": "assets/image/Glock_G25.jpg",
+            "descricao": "Pistola semiautomática com sistema Safe Action, câmara .380 Auto, produzida na Áustria.",
+            "caracteristicas": [
+                "Tipo Funcionamento: SEMI-AUTOMATICA",
+                "Calibre: .380 Auto",
+                "Capacidade: 15+1",
+                "Comprimento Total: 174mm",
+                "Altura: 127mm",
+                "Largura: 30mm",
+                "Peso: 550g",
+                "Marca: GLOCK",
+                "Modelo: G25",
+                "Origem: Áustria"
+            ],
+            "especificacoes": [
+                "Fabricante: Glock",
+                "Modelo: G25",
+                "Calibre: .380 Auto",
+                "Funcionamento: Semiautomática",
+                "Sistema: Safe Action",
+                "Capacidade: 15+1 disparos",
+                "Comprimento total: 174 mm",
+                "Altura: 127 mm",
+                "Largura: 30 mm",
+                "Peso: 550 g",
+                "Material: Polímero e aço",
+                "Acabamento: Preto fosco",
+                "Miras: Fixas",
+                "Segurança: Sistema Safe Action"
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Desert Eagle .50",
+            "marca": "Magnum Research",
+            "codigo": "DE50",
+            "preco": 8750.00,
+            "parcelamento": "12x de R$ 937,50",
+            "imagem": "assets/image/DESERT EAGLE.webp",
+            "descricao": "Pistola semiautomática de ação simples, com câmara no calibre .50 Action Express.",
+            "caracteristicas": [
+                "Tipo Funcionamento: SEMI-AUTOMATICA",
+                "Calibre: .50 Action Express",
+                "Capacidade: 7+1",
+                "Comprimento Total: 270mm",
+                "Altura: 159mm",
+                "Largura: 35mm",
+                "Peso: 2050g",
+                "Marca: Magnum Research",
+                "Modelo: Desert Eagle",
+                "Origem: Israel"
+            ],
+            "especificacoes": [
+                "Fabricante: Magnum Research",
+                "Modelo: Desert Eagle",
+                "Calibre: .50 Action Express",
+                "Funcionamento: Semiautomática",
+                "Sistema: Ação simples",
+                "Capacidade: 7+1 disparos",
+                "Comprimento total: 270 mm",
+                "Altura: 159 mm",
+                "Largura: 35 mm",
+                "Peso: 2050 g",
+                "Material: Aço inoxidável",
+                "Acabamento: Cromado",
+                "Miras: Ajustáveis",
+                "Segurança: Trava de percussor"
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Coldre Tático",
+            "marca": "Tática Alpha",
+            "codigo": "CLD001",
+            "preco": 350.00,
+            "parcelamento": "6x de R$ 58,33",
+            "imagem": "assets/image/banner1.png",
+            "descricao": "Coldre tático de alta resistência para uso profissional.",
+            "caracteristicas": [
+                "Tipo: Coldre Tático",
+                "Material: Nylon 1000D",
+                "Cor: Preto",
+                "Ajustável: Sim",
+                "Compatibilidade: Universal",
+                "Marca: Tática Alpha",
+                "Modelo: Tático Profissional"
+            ],
+            "especificacoes": [
+                "Fabricante: Tática Alpha",
+                "Modelo: Tático Profissional",
+                "Material: Nylon 1000D",
+                "Cor: Preto",
+                "Ajustável: Sim",
+                "Compatibilidade: Universal",
+                "Peso: 200 g",
+                "Dimensões: 20 x 15 x 5 cm",
+                "Garantia: 1 ano",
+                "Uso: Profissional"
+            ]
+        }
+    ]
+}
